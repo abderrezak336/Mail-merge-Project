@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Invite Freinds{% endblock %}
+
+
+
+{% block content %}
+
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <img src="https://media2.giphy.com/media/st7RtYXtqAFMs/giphy.gif?cid=ecf05e477gh7hq550nn77um2duc0sj84p65wyp4m7a40uvxz&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+        <h1 class="mt-5" id="head1">🎉 Invite your best freinds 🎉 </h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted mt-2" id="p2">
+          click on button add and write the name and email of your freind, and we will send a beutiful invited message to him
+        </p>
+        <div class="d-inline-flex gap-2 mb-5 mt-5">
+            <a class="btn btn-info btn-lg" role="button" href="{{url_for('add')}}">Add</a>
+            <a class="btn btn-info btn-lg" role="button" href="{{url_for('freinds_list')}}">Show</a>
+        </div>
+      </div>
+
+{% endblock %}
